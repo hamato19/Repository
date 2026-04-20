@@ -1,95 +1,72 @@
-/*
- * IMPORTANT NOTE: Theme based on Tailwindcss but for the purpose of simplifing the DOM we use
- * tailwind classes with @apply directive in the SCSS files
-*/
+/* تحسينات عامة للخط والاتجاه */
+body {
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    background-color: #f8fafc; /* لون خلفية مريح للعين */
+    color: #1e293b;
+    scroll-behavior: smooth;
+}
 
-/**
- * SETTINGS
- * Tailwind.............Import tailwind.
- * Fonts................Any font files.
- * Global...............Project-specific, globally available variables.
- * Breakpoints..........Mixins and variables for responsive styles.
- *
- * GENERIC
- * Common...............All commn styles and assistan classes and common style fixes
- * Reset................Reset specific elements to make them easier to style in other contexts.
- * Animations...........Some of animations from anime.css
- * Lazyload.............Lazyload placeholder styles
- * RTL..................Specific styles for RTL.
- * LTR..................Specific styles for LTR.
- *
- * ELEMENTS
- * Forms................Element-level form styling.
- * Buttons..............Specific styles for buttons.
- * Radio................Specific styles for custom radio button.
- * Radio Images.........Specific styles for radio images, used in product options.
- *
- * COMPONENTS
- * Header...............Specific styles for header styles.
- * Footer...............Specific styles for footer styles.
- * Menu.................Specific styles for main menu and mobile menu styles.
- * User Menu............Specific styles for user menu dropdown.
- * User Pages...........Specific styles for user pages like profile, notifications, orders...
- * Home Blocks..........Specific styles for home blocks.
- * Slider...............Specific styles for sliders.
- * Product..............Specific styles for single product page and it's elements.
- * Brands...............Specific styles for brands page.
- * Placeholder..........Specific styles for no content placeholders.
- * Gifting..............Specific styles for gifting system.
- * Loyalty..............Specific styles for loyalty system.
- *
- * UTILITIES
- * Chat Bots............Specific styles for chats bots widget.
- * Swal.................Specific styles for Sweet Alert addon.
- * Safari Fixes.........Specific styles for Safari Browser.
- *
- * EMBEDED ADDONS
- * Lite Youtube Embed...Specific styles for lite-youtube-embed addon.
- * Swiper...............Specific styles for swiper slider addon.
- * MMenu................Specific styles for mmenu addon.
- *
-*/
+/* زر احترافي مع تأثير عند التمرير */
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); /* تدرج لوني عصري */
+    color: #ffffff;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 12px; /* زوايا ناعمة بدلاً من الدائرية الكاملة */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: none;
+    box-shadow: 0 4px 15px rgba(30, 64, 175, 0.2);
+    cursor: pointer;
+    text-decoration: none;
+}
 
-@import './01-settings/tailwind';
-@import './01-settings/fonts';
-@import './01-settings/global';
-@import './01-settings/breakpoints';
+.btn-primary:hover {
+    transform: translateY(-3px); /* حركة ارتفاع بسيطة */
+    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.4);
+    filter: brightness(1.1);
+}
 
-@import './02-generic/reset';
-@import './02-generic/common';
-@import './02-generic/tooltip';
-@import './02-generic/animations';
-@import './02-generic/lazyload';
-@import './02-generic/rtl';
-@import './02-generic/ltr';
-@import './02-generic/mixins';
+/* تنسيق كروت الاشتراكات (Pricing Cards) */
+.subscription-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px); /* تأثير الزجاج الضبابي */
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    border-radius: 20px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
 
-@import './03-elements/form';
-@import './03-elements/buttons';
-@import './03-elements/radio';
-@import './03-elements/radio-images';
+.subscription-card:hover {
+    border-color: #3b82f6;
+    background: #ffffff;
+}
 
-@import './04-components/header';
-@import './04-components/footer';
-@import './04-components/menus';
-@import './04-components/user-menu';
-@import './04-components/user-pages';
-@import './04-components/home-blocks';
-@import './04-components/slider';
-@import './04-components/product';
-@import './04-components/brands';
-@import './04-components/no-content-placeholder';
-@import './04-components/gifting';
-@import './04-components/loyalty';
-@import './04-components/virtooal';
-@import './04-components/landing-page';
-@import './04-components/filters';
-@import './04-components/add-product-toast';
+/* تحسين شكل النصوص */
+h1, h2, h3 {
+    letter-spacing: -0.02em;
+    line-height: 1.4;
+}
 
-@import './05-utilities/chat-bots';
-@import './05-utilities/swal';
-@import './05-utilities/safari-fixes';
-@import './05-utilities/font-customization';
+/* إضافة لمسة احترافية للقوائم */
+ul {
+    list-style: none;
+    padding: 0;
+}
 
-@import 'lite-youtube-embed/src/lite-yt-embed.css';
-@import 'mmenu-light/dist/mmenu-light.css';
+ul li {
+    position: relative;
+    padding-right: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+ul li::before {
+    content: "✓";
+    position: absolute;
+    right: 0;
+    color: #10b981; /* لون أخضر للعلامة */
+    font-weight: bold;
+}
