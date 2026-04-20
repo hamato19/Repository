@@ -3,28 +3,28 @@
     "ar": "Fakra"
     "en": "Fakra"
   },
-  "repository": "https://github.com/hamato19/Repository",
+  "repository": "https://github.com/hamato19/Repository"
   "author": "Fahad",
-  "author_email": "Hamato19@gmail.com",
-  "version": "1.0.0",
+  "author_email": "Hamato19@gmail.com"
+  "version": "1.0.0"
   "features": [
     "color"
   ],
-  "settings": [],
+  "settings": []
   "components": [
     {
-      "id": "hero_section_fixed",
+      "id": "hero_section_fixed"
       "title": {
-        "ar": "قسم الترحيب",
+        "ar": "قسم الترحيب"
         "en": "Hero"
       },
-      "icon": "sicon-image",
-      "path": "home.hero_section",
+      "icon": "sicon-image"
+      "path": "home.hero_section"
       "fields": [
         {
-          "id": "title",
-          "type": "string",
-          "label": "العنوان",
+          "id": "title"
+          "type": "string"
+          "label": "العنوان"
           "value": "اهلا بك"
         }
       ]
