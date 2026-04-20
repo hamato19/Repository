@@ -1,57 +1,32 @@
 {
   "name": {
-    "ar": "Fakra - Mr.MHO",
-    "en": "Fakra - Mr.MHO"
+    "ar": "Fakra",
+    "en": "Fakra"
   },
   "repository": "https://github.com/hamato19/Repository",
-  "author": "Fahad bin Mohammed",
+  "author": "Fahad",
   "author_email": "Hamato19@gmail.com",
   "version": "1.0.0",
   "features": [
-    "mega-menu",
-    "fonts",
     "color"
   ],
-  "settings": [
-    {
-      "id": "hero_bg_color",
-      "label": "لون خلفية الهيرو",
-      "type": "string",
-      "format": "color",
-      "value": "#0f172a"
-    }
-  ],
+  "settings": [],
   "components": [
     {
-      "id": "e3057630-9721-4f16-834c-197e887e6400",
+      "id": "hero_section_fixed",
       "title": {
-        "ar": "قسم الترحيب (Hero Section)",
-        "en": "Hero Section"
+        "ar": "قسم الترحيب",
+        "en": "Hero"
       },
       "icon": "sicon-image",
       "path": "home.hero_section",
       "fields": [
         {
-          "id": "main_title",
+          "id": "title",
           "type": "string",
-          "label": "العنوان الرئيسي",
-          "format": "text",
-          "value": "أفضل الخدمات الرقمية"
-        },
-        {
-          "id": "sub_title",
-          "type": "string",
-          "label": "الوصف",
-          "format": "textarea",
-          "value": "تسليم فوري وضمان ذهبي"
-        },
-        {
-          "id": "hero_image",
-          "type": "string",
-          "label": "الصورة الرئيسية",
-          "format": "image",
-          "value": ""
-    
+          "label": "العنوان",
+          "value": "اهلا بك"
+        }
       ]
     }
   ]
