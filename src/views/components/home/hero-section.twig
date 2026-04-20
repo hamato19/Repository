@@ -1,0 +1,62 @@
+{# src/views/components/home/hero-section.twig #}
+<section class="hero-wrapper relative overflow-hidden py-16 lg:py-24" style="background: {{ theme.settings.hero_bg_color | default('#0f172a') }};">
+    
+    {# تأثيرات خلفية فنية #}
+    <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-indigo-600 rounded-full filter blur-3xl"></div>
+    </div>
+
+    <div class="container relative z-10 mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            
+            {# محتوى النصوص #}
+            <div class="w-full lg:w-1/2 text-center lg:text-right">
+                <h1 class="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                    {{ main_title }}
+                </h1>
+                <p class="text-lg lg:text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl mx-auto lg:ml-0">
+                    {{ sub_title }}
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#pricing" class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-lg font-bold py-4 px-10 rounded-full transition duration-300 transform hover:scale-105 shadow-xl">
+                        {{ theme.settings.primary_cta_text }}
+                    </a>
+                    <div class="flex items-center justify-center gap-2 text-white opacity-80">
+                        <span class="flex -space-x-2">
+                            <span class="w-8 h-8 rounded-full border-2 border-slate-800 bg-gray-500 overflow-hidden inline-block text-[10px] flex items-center justify-center italic">User</span>
+                            <span class="w-8 h-8 rounded-full border-2 border-slate-800 bg-gray-600 overflow-hidden inline-block text-[10px] flex items-center justify-center italic">User</span>
+                        </span>
+                        <span class="text-sm">+10k عميل يثق بنا</span>
+                    </div>
+                </div>
+            </div>
+
+            {# قسم الصورة #}
+            <div class="w-full lg:w-1/2">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    <div class="relative bg-slate-900 rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+                        {% if hero_image %}
+                            <img src="{{ hero_image }}" alt="{{ main_title }}" class="w-full h-auto object-cover transform transition duration-500 group-hover:scale-105">
+                        {% else %}
+                            <div class="w-full h-64 flex items-center justify-center bg-slate-800 text-gray-500">
+                                <i class="sicon-image text-5xl"></i>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    .hero-wrapper {
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+    }
+</style>
