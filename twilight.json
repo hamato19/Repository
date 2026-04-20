@@ -1,31 +1,30 @@
 {
   "name": {
-    "ar": "Fakra"
+    "ar": "Fakra",
     "en": "Fakra"
   },
-  "repository": "https://github.com/hamato19/Repository"
-  "author": "Fahad"
-  "author_email": "Hamato19@gmail.com"
-  "version": "1.0.0"
-  "features": [
-    "color"
-  ],
-  "settings": []
+  "repository": "https://github.com/hamato19/Repository",
+  "author": "Fahad bin Mohammed",
+  "author_email": "Hamato19@gmail.com",
+  "version": "1.0.0",
+  "features": [],
+  "settings": [],
   "components": [
     {
-      "id": "hero_section_fixed"
+      "id": "e3057630-9721-4f16-834c-197e887e6400",
       "title": {
-        "ar": "قسم الترحيب"
+        "ar": "قسم الترحيب",
         "en": "Hero"
       },
-      "icon": "sicon-image"
-      "path": "home.hero_section"
+      "icon": "sicon-image",
+      "path": "home.hero_section",
       "fields": [
         {
-          "id": "title"
-          "type": "string"
-          "label": "العنوان"
-          "value": "اهلا بك"
+          "id": "main_title",
+          "type": "string",
+          "label": "العنوان",
+          "format": "text",
+          "value": "أهلاً بك في متجرنا"
         }
       ]
     }
