@@ -1,47 +1,31 @@
 {
     "name": {
-        "ar": "Mr.MHO - صفحة هبوط الاحترافية",
-        "en": "Mr.MHO - Pro Landing Page"
+        "ar": "Fakra - Mr.MHO",
+        "en": "Fakra - Mr.MHO"
     },
     "repository": "https://github.com/hamato19/Repository",
-    "author": "Mr.MHO",
+    "author": "Fahad bin Mohammed",
     "author_email": "Hamato19@gmail.com",
     "features": [
         "mega-menu",
         "fonts",
         "color",
-        "component-store-features",
-        "component-youtube"
+        "component-store-features"
     ],
     "settings": [
         {
-            "type": "static",
-            "format": "title",
-            "id": "landing_config",
-            "value": "<div style='background-color: #1e40af; color: white; padding: 10px; border-radius: 5px; text-align: center;'>إعدادات صفحة هبوط المنتج الواحد</div>"
-        },
-        {
-            "id": "header_is_transparent",
-            "label": "تفعيل الهيدر الشفاف",
-            "description": "يجعل الهيدر يندمج مع خلفية البنر في البداية",
-            "type": "boolean",
-            "format": "switch",
-            "value": true
+            "id": "hero_bg_color",
+            "label": "لون خلفية الهيرو",
+            "type": "string",
+            "format": "color",
+            "value": "#0f172a"
         },
         {
             "id": "primary_cta_text",
             "label": "نص زر الشراء الرئيسي",
             "type": "string",
             "format": "text",
-            "value": "اشترك الآن واستلم فوراً",
-            "multilanguage": true
-        },
-        {
-            "id": "hero_bg_color",
-            "label": "لون خلفية قسم الترحيب",
-            "type": "string",
-            "format": "color",
-            "value": "#0f172a"
+            "value": "اشترك الآن واستلم فوراً"
         }
     ],
     "components": [
@@ -52,79 +36,29 @@
                 "en": "Hero Section"
             },
             "icon": "sicon-image",
-            "path": "home.hero-section",
+            "path": "home.hero_section",
             "fields": [
                 {
                     "id": "main_title",
                     "type": "string",
-                    "label": "العنوان الرئيسي للمنتج",
+                    "label": "العنوان الرئيسي",
                     "format": "text",
-                    "multilanguage": true,
-                    "value": "أفضل اشتراك رقمي في المملكة"
+                    "value": "أفضل الخدمات الرقمية"
                 },
                 {
                     "id": "sub_title",
                     "type": "string",
-                    "label": "وصف قصير مقنع",
+                    "label": "الوصف",
                     "format": "textarea",
-                    "multilanguage": true,
-                    "value": "انضم لأكثر من 10,000 عميل يثقون بخدماتنا. تسليم آلي وضمان ذهبي."
+                    "value": "تسليم فوري وضمان ذهبي"
                 },
                 {
                     "id": "hero_image",
                     "type": "string",
-                    "label": "صورة المنتج الرئيسية",
+                    "label": "الصورة الرئيسية",
                     "format": "image"
                 }
             ]
-        },
-        {
-            "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
-            "title": {
-                "ar": "جداول الأسعار والباقات",
-                "en": "Pricing Table"
-            },
-            "icon": "sicon-tag",
-            "path": "home.pricing",
-            "fields": [
-                {
-                    "id": "plans",
-                    "type": "collection",
-                    "label": "الباقات المتاحة",
-                    "item_label": "باقة",
-                    "fields": [
-                        { "id": "name", "type": "string", "label": "اسم الباقة", "format": "text" },
-                        { "id": "price", "type": "string", "label": "السعر", "format": "text" },
-                        { "id": "features", "type": "string", "label": "المميزات (افصل بينها بفاصلة)", "format": "textarea" },
-                        { "id": "product_url", "type": "string", "label": "رابط المنتج في سلة", "format": "text" }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "a85c2345-1234-4567-89ab-cdef12345678",
-            "title": {
-                "ar": "آراء العملاء (Social Proof)",
-                "en": "Testimonials"
-            },
-            "icon": "sicon-star",
-            "path": "home.testimonials",
-            "fields": [
-                {
-                    "id": "reviews",
-                    "type": "collection",
-                    "fields": [
-                        { "id": "user", "type": "string", "label": "اسم العميل" },
-                        { "id": "comment", "type": "string", "label": "التعليق", "format": "textarea" },
-                        { "id": "rating", "type": "number", "label": "التقييم (1-5)", "value": 5 }
-                    ]
-                }
-            ]
         }
-    ],
-    "support_url": "https://wa.me/9665XXXXXXXX",
-    "description": {
-        "ar": "ثيم صفحة هبوط لمنتج واحد متخصص للاشتراكات الرقمية - تطوير Mr.MHO",
-        "en": "Single Product Landing Page for Digital Subscriptions by Mr.MHO"
-    }
+    ]
 }
