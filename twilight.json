@@ -4,8 +4,10 @@
     "en": "Fakra - Mr.MHO"
   },
   "repository": "https://github.com/hamato19/Repository",
-  "author": "Fahad bin Mohammed",
-  "author_email": "Hamato19@gmail.com",
+  "author": {
+    "name": "Fahad bin Mohammed",
+    "email": "Hamato19@gmail.com"
+  },
   "version": "1.0.0",
   "features": [
     "mega-menu",
@@ -18,12 +20,12 @@
       "label": "لون خلفية الهيرو",
       "type": "string",
       "format": "color",
-      "value": "#0f172a"
+      "default": "#0f172a"
     }
   ],
   "components": [
     {
-      "id": "e3057630-9721-4f16-834c-197e887e6400",
+      "id": "hero-section",
       "title": {
         "ar": "قسم الترحيب (Hero Section)",
         "en": "Hero Section"
@@ -36,20 +38,21 @@
           "type": "string",
           "label": "العنوان الرئيسي",
           "format": "text",
-          "value": "أفضل الخدمات الرقمية"
+          "default": "أفضل الخدمات الرقمية"
         },
         {
           "id": "sub_title",
           "type": "string",
           "label": "الوصف",
           "format": "textarea",
-          "value": "تسليم فوري وضمان ذهبي"
+          "default": "تسليم فوري وضمان ذهبي"
         },
         {
           "id": "hero_image",
           "type": "string",
           "label": "الصورة الرئيسية",
-          "format": "image"
+          "format": "image",
+          "default": ""
         }
       ]
     }
