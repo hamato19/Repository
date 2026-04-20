@@ -17,7 +17,7 @@
     {
       "id": "e3057630-9721-4f16-834c-197e887e6400",
       "title": {
-        "ar": "قسم الترحيب (Hero Section)",
+        "ar": "قسم الترحيب",
         "en": "Hero Section"
       },
       "icon": "sicon-image",
@@ -26,23 +26,9 @@
         {
           "id": "main_title",
           "type": "string",
-          "label": "العنوان الرئيسي",
+          "label": "العنوان",
           "format": "text",
-          "value": "أهلاً بك في متجرنا"
-        },
-        {
-          "id": "sub_title",
-          "type": "string",
-          "label": "الوصف",
-          "format": "textarea",
-          "value": "تسليم فوري وضمان ذهبي"
-        },
-        {
-          "id": "hero_image",
-          "type": "string",
-          "label": "الصورة الرئيسية",
-          "format": "image",
-          "value": ""
+          "value": "أهلاً بك"
         }
       ]
     }
