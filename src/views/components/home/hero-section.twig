@@ -1,4 +1,6 @@
-{# src/views/components/home/hero_section.twig #}
+{# 1. إضافة سطر الربط في البداية #}
+{% set component = theme.components | filter(c => c.path == 'home.hero_section') | first %}
+
 <section class="hero-section relative overflow-hidden py-12 lg:py-20" style="background: {{ theme.settings.hero_bg_color | default('#0f172a') }};">
     
     {# تأثير الإضاءة الخلفية #}
@@ -10,24 +12,27 @@
             {# النصوص #}
             <div class="w-full lg:w-1/2 text-center lg:text-right">
                 <h1 class="text-3xl lg:text-5xl font-bold text-white mb-4 leading-tight">
-                    {{ main_title }}
+                    {# 2. استدعاء المتغير من المكون #}
+                    {{ component.fields.main_title | default('أهلاً بك') }}
                 </h1>
                 <p class="text-gray-300 text-lg mb-8 leading-relaxed">
-                    {{ sub_title }}
+                    {# 3. استدعاء الوصف #}
+                    {{ component.fields.sub_title | default('وصف افتراضي من النظام') }}
                 </p>
                 
                 <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
                     <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg">
-                        {{ theme.settings.primary_cta_text }}
+                        {{ theme.settings.primary_cta_text | default('اشتر الآن') }}
                     </a>
                 </div>
             </div>
 
             {# الصورة #}
             <div class="w-full lg:w-1/2">
-                {% if hero_image %}
+                {# 4. التحقق من الصورة داخل المكون #}
+                {% if component.fields.hero_image %}
                     <div class="rounded-2xl overflow-hidden shadow-2xl border border-gray-700 transform lg:rotate-2 hover:rotate-0 transition-transform duration-500">
-                        <img src="{{ hero_image }}" alt="Hero Image" class="w-full h-auto">
+                        <img src="{{ component.fields.hero_image }}" alt="Hero Image" class="w-full h-auto">
                     </div>
                 {% else %}
                     <div class="bg-gray-800 rounded-2xl h-64 flex items-center justify-center border-2 border-dashed border-gray-600">
