@@ -7,14 +7,18 @@
   "author": "Fahad bin Mohammed",
   "author_email": "Hamato19@gmail.com",
   "version": "1.0.0",
-  "features": [],
+  "features": [
+    "mega-menu",
+    "fonts",
+    "color"
+  ],
   "settings": [],
   "components": [
     {
       "id": "e3057630-9721-4f16-834c-197e887e6400",
       "title": {
-        "ar": "قسم الترحيب",
-        "en": "Hero"
+        "ar": "قسم الترحيب (Hero Section)",
+        "en": "Hero Section"
       },
       "icon": "sicon-image",
       "path": "home.hero_section",
@@ -22,9 +26,23 @@
         {
           "id": "main_title",
           "type": "string",
-          "label": "العنوان",
+          "label": "العنوان الرئيسي",
           "format": "text",
           "value": "أهلاً بك في متجرنا"
+        },
+        {
+          "id": "sub_title",
+          "type": "string",
+          "label": "الوصف",
+          "format": "textarea",
+          "value": "تسليم فوري وضمان ذهبي"
+        },
+        {
+          "id": "hero_image",
+          "type": "string",
+          "label": "الصورة الرئيسية",
+          "format": "image",
+          "value": ""
         }
       ]
     }
