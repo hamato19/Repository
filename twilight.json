@@ -46,7 +46,7 @@
     ],
     "components": [
         {
-            "key": "single-product-hero",
+            "id": "e3057630-9721-4f16-834c-197e887e6400",
             "title": {
                 "ar": "قسم الترحيب (Hero Section)",
                 "en": "Hero Section"
@@ -74,13 +74,12 @@
                     "id": "hero_image",
                     "type": "string",
                     "label": "صورة المنتج الرئيسية",
-                    "format": "image",
-                    "required": true
+                    "format": "image"
                 }
             ]
         },
         {
-            "key": "pricing-table",
+            "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
             "title": {
                 "ar": "جداول الأسعار والباقات",
                 "en": "Pricing Table"
@@ -103,7 +102,7 @@
             ]
         },
         {
-            "key": "customer-reviews",
+            "id": "a85c2345-1234-4567-89ab-cdef12345678",
             "title": {
                 "ar": "آراء العملاء (Social Proof)",
                 "en": "Testimonials"
