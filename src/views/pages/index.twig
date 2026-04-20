@@ -1,31 +1,27 @@
-<section id="pricing" class="py-20 bg-gray-50">
-    <div class="container text-center">
-        <h2 class="text-4xl font-bold mb-10">اختر باقة الاشتراك المناسبة</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-500">
-                <h3 class="text-xl font-bold">الباقة الأساسية</h3>
-                <div class="price text-4xl font-bold my-4">99 <span class="text-sm">ر.س</span></div>
-                <ul class="text-right mb-8">
-                    <li>✅ دعم فني 24/7</li>
-                    <li>✅ وصول للمنصة الأساسية</li>
-                    <li>✅ اشتراك لمدة شهر</li>
-                </ul>
-                <button class="w-full bg-blue-600 text-white py-3 rounded-lg">اطلب الآن</button>
-            </div>
+{% extends "layouts.master" %}
 
-            <div class="bg-white p-8 rounded-xl shadow-2xl border-t-4 border-yellow-500 scale-105">
-                <span class="bg-yellow-500 text-white px-3 py-1 rounded-full text-xs">الأكثر طلباً</span>
-                <h3 class="text-xl font-bold mt-2">الباقة الاحترافية</h3>
-                <div class="price text-4xl font-bold my-4">249 <span class="text-sm">ر.س</span></div>
-                <ul class="text-right mb-8">
-                    <li>✅ كل مميزات الأساسية</li>
-                    <li>✅ خدمات أتمتة حصرية</li>
-                    <li>✅ اشتراك لمدة 3 أشهر</li>
-                </ul>
-                <button class="w-full bg-yellow-500 text-white py-3 rounded-lg">اطلب الآن</button>
-            </div>
+{% block content %}
+<section class="landing-hero bg-primary text-white py-20 text-center">
+    <h1 class="text-5xl font-bold">عالم الاشتراكات الرقمية بين يديك</h1>
+    <p class="mt-4 text-xl">خدمات مضمونة، تسليم فوري، وأسعار لا تقبل المنافسة</p>
+    <a href="#plans" class="mt-8 inline-block bg-accent text-white px-10 py-3 rounded-full font-bold">تصفح الباقات</a>
+</section>
 
+<section id="plans" class="py-20 container">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="border rounded-xl p-6 text-center shadow-md">
+            <h3 class="text-2xl font-bold">يوتيوب بريميوم</h3>
+            <p class="text-gray-500 mt-2">سنة كاملة - حساب خاص</p>
+            <div class="text-3xl font-bold my-4">49 ر.س</div>
+            <a href="/products/youtube" class="btn btn-primary w-full">شراء الآن</a>
+        </div>
+        
+        <div class="border rounded-xl p-6 text-center shadow-lg border-primary scale-105 bg-blue-50">
+            <h3 class="text-2xl font-bold text-primary">شاهد VIP</h3>
+            <p class="text-gray-500 mt-2">باقة الرياضة والمسلسلات</p>
+            <div class="text-3xl font-bold my-4">120 ر.س</div>
+            <a href="/products/shahid" class="btn btn-primary w-full">شراء الآن</a>
         </div>
     </div>
 </section>
+{% endblock %}
