@@ -1,14 +1,31 @@
-{#
-| Variable         | Type       | Description                                                         |
-|------------------|------------|---------------------------------------------------------------------|
-| page             | object     |                                                                     |
-| page.title       | string     | *could be html                                                      |
-| page.slug        | string     | ex: "cat.show"                                                      |
-#}
-{% extends "layouts.master" %}
-{% block content %}
-    {% component home %}
-{% endblock %}
-{% block scripts %}
-    <script defer src="{{ 'home.js' | asset }}"></script>
-{% endblock %}
+<section id="pricing" class="py-20 bg-gray-50">
+    <div class="container text-center">
+        <h2 class="text-4xl font-bold mb-10">اختر باقة الاشتراك المناسبة</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-500">
+                <h3 class="text-xl font-bold">الباقة الأساسية</h3>
+                <div class="price text-4xl font-bold my-4">99 <span class="text-sm">ر.س</span></div>
+                <ul class="text-right mb-8">
+                    <li>✅ دعم فني 24/7</li>
+                    <li>✅ وصول للمنصة الأساسية</li>
+                    <li>✅ اشتراك لمدة شهر</li>
+                </ul>
+                <button class="w-full bg-blue-600 text-white py-3 rounded-lg">اطلب الآن</button>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-2xl border-t-4 border-yellow-500 scale-105">
+                <span class="bg-yellow-500 text-white px-3 py-1 rounded-full text-xs">الأكثر طلباً</span>
+                <h3 class="text-xl font-bold mt-2">الباقة الاحترافية</h3>
+                <div class="price text-4xl font-bold my-4">249 <span class="text-sm">ر.س</span></div>
+                <ul class="text-right mb-8">
+                    <li>✅ كل مميزات الأساسية</li>
+                    <li>✅ خدمات أتمتة حصرية</li>
+                    <li>✅ اشتراك لمدة 3 أشهر</li>
+                </ul>
+                <button class="w-full bg-yellow-500 text-white py-3 rounded-lg">اطلب الآن</button>
+            </div>
+
+        </div>
+    </div>
+</section>
