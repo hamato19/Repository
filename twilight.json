@@ -1,64 +1,56 @@
 {
-    "name": {
-        "ar": "Fakra - Mr.MHO",
-        "en": "Fakra - Mr.MHO"
-    },
-    "repository": "https://github.com/hamato19/Repository",
-    "author": "Fahad bin Mohammed",
-    "author_email": "Hamato19@gmail.com",
-    "features": [
-        "mega-menu",
-        "fonts",
-        "color",
-        "component-store-features"
-    ],
-    "settings": [
+  "name": {
+    "ar": "Fakra - Mr.MHO",
+    "en": "Fakra - Mr.MHO"
+  },
+  "repository": "https://github.com/hamato19/Repository",
+  "author": "Fahad bin Mohammed",
+  "author_email": "Hamato19@gmail.com",
+  "features": [
+    "mega-menu",
+    "fonts",
+    "color"
+  ],
+  "settings": [
+    {
+      "id": "hero_bg_color",
+      "label": "لون خلفية الهيرو",
+      "type": "string",
+      "format": "color",
+      "value": "#0f172a"
+    }
+  ],
+  "components": [
+    {
+      "id": "e3057630-9721-4f16-834c-197e887e6400",
+      "title": {
+        "ar": "قسم الترحيب (Hero Section)",
+        "en": "Hero Section"
+      },
+      "icon": "sicon-image",
+      "path": "home.hero_section",
+      "fields": [
         {
-            "id": "hero_bg_color",
-            "label": "لون خلفية الهيرو",
-            "type": "string",
-            "format": "color",
-            "value": "#0f172a"
+          "id": "main_title",
+          "type": "string",
+          "label": "العنوان الرئيسي",
+          "format": "text",
+          "value": "أفضل الخدمات الرقمية"
         },
         {
-            "id": "primary_cta_text",
-            "label": "نص زر الشراء الرئيسي",
-            "type": "string",
-            "format": "text",
-            "value": "اشترك الآن واستلم فوراً"
-        }
-    ],
-    "components": [
+          "id": "sub_title",
+          "type": "string",
+          "label": "الوصف",
+          "format": "textarea",
+          "value": "تسليم فوري وضمان ذهبي"
+        },
         {
-            "id": "e3057630-9721-4f16-834c-197e887e6400",
-            "title": {
-                "ar": "قسم الترحيب (Hero Section)",
-                "en": "Hero Section"
-            },
-            "icon": "sicon-image",
-            "path": "home.hero_section",
-            "fields": [
-                {
-                    "id": "main_title",
-                    "type": "string",
-                    "label": "العنوان الرئيسي",
-                    "format": "text",
-                    "value": "أفضل الخدمات الرقمية"
-                },
-                {
-                    "id": "sub_title",
-                    "type": "string",
-                    "label": "الوصف",
-                    "format": "textarea",
-                    "value": "تسليم فوري وضمان ذهبي"
-                },
-                {
-                    "id": "hero_image",
-                    "type": "string",
-                    "label": "الصورة الرئيسية",
-                    "format": "image"
-                }
-            ]
+          "id": "hero_image",
+          "type": "string",
+          "label": "الصورة الرئيسية",
+          "format": "image"
         }
-    ]
+      ]
+    }
+  ]
 }
